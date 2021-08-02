@@ -1,0 +1,31 @@
+﻿<Window x:Class="Get_Code__Of_Color.GetCodeOfColor"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Get_Code__Of_Color"
+        mc:Ignorable="d"
+        Title="Get Code Of Color" Height="550px" Width="900" ResizeMode="NoResize">
+    <Grid>
+        <Slider HorizontalAlignment="Left" Margin="22,153,0,0" VerticalAlignment="Top" Width="18" Orientation="Vertical" Height="259" Maximum="255" Minimum="0" x:Name="transparencySlider"  ValueChanged="Slider_ValueChanged"/>
+        <Slider HorizontalAlignment="Left" Margin="200,160,0,0" VerticalAlignment="Top" Width="18" Orientation="Vertical" Height="252" Maximum="255" Minimum="0" x:Name="redSlider" ValueChanged="Slider_ValueChanged"/>
+        <Slider HorizontalAlignment="Left" Margin="400,160,0,0" VerticalAlignment="Top" Width="18" Orientation="Vertical" Height="252" Maximum="255" Minimum="0" x:Name="greenSlider" ValueChanged="Slider_ValueChanged"/>
+        <Slider HorizontalAlignment="Left" Margin="601,160,0,0" VerticalAlignment="Top" Width="18" Orientation="Vertical" Height="252" Maximum="255" Minimum="0" x:Name="blueSlider" ValueChanged="Slider_ValueChanged"/>
+        <Rectangle x:Name="ColorIndicator" HorizontalAlignment="Left" Height="44" Margin="680,242,0,0" Stroke="Black" VerticalAlignment="Top" Width="88"/>
+        <TextBox HorizontalAlignment="Left" Margin="670,378,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Name="CodeOfColor" />
+        <Label Content="transparency" Margin="0,112,732,374"/>
+        <Label Content="red" Margin="189,112,602,370" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.136"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label Content="green" Margin="383,112,405,370"/>
+        <Label Content="blue" Margin="581,112,190,374"/>
+
+    </Grid>
+</Window>

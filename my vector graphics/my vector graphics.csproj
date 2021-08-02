@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <RootNamespace>my_vector_graphics</RootNamespace>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Export window\Export window.csproj" />
+    <ProjectReference Include="..\Get Code  Of Color\Get Code  Of Color.csproj" />
+  </ItemGroup>
+
+</Project>
